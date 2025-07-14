@@ -1,17 +1,26 @@
+// Packages
+import { NavLink } from 'react-router-dom'
+
+// Styles
 import './Header.scss'
 
 export default function Header() {
+    let name: string = "Mansour Lo Lo";
+
     return (
         <header id='header' >
-            <h1>Mansour</h1>
-            <ul>
-                <li>
-                    <a href="#"> Projects </a>
-                </li>
-                <li>
-                    <a href="#"> About Me </a>
-                </li>
-            </ul>
+            <div id="header-wrapper">
+                <h1 className='text-name-portfolio' >{name} </h1>
+                <ul id='navbar' >
+                    <li>
+                        <NavLink to="/projects" > Projects </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/about" > About Me </NavLink>
+                    </li>
+                </ul>
+
+            </div>
         </header>
     )
 }
