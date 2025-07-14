@@ -6,6 +6,7 @@ import Hero from '@components/hero/Hero'
 import './Home.scss'
 import MyInfo from '@components/myInfo/MyInfo'
 import MyTools from '@components/myTools/MyTools'
+import MyLatestWorks from '@components/mylatestWorks/MyLatestWorks'
 
 export default function Home() {
     return (
@@ -13,8 +14,9 @@ export default function Home() {
             <Header />
             <Hero />
             <MyInfo />
-
             <MyTools />
+
+            <MyLatestWorks />
 
         </div>
     )

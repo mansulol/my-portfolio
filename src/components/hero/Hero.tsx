@@ -5,9 +5,12 @@ export default function Hero() {
         <section id="section-hero" >
             <div className="section-hero-wrapper">
                 <h2 id="text-section-hero" >
-                    Lorem <span>ipsum</span> odor <br />
+                    {/* Lorem <span>ipsum</span> odor <br />
                     amet, consectetuer <br />
-                    adipiscing
+                    adipiscing */}
+                    Making <br />
+                    <span>great</span> things <br />
+                    happen
                 </h2>
             </div>
         </section>

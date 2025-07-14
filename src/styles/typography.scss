@@ -10,8 +10,8 @@ $font-size-H4: 34px;
 $font-size-H5: 24px;
 $font-size-H6: 20px;
 $font-size-Headline: 34px;
-$font-size-Body: 14px;
 $font-size-Subtitle: 16px;
+$font-size-Body: 14px;
 $font-size-Caption: 10px;
 $font-size-Footnote: 8px;
 
@@ -139,7 +139,7 @@ sans-serif;
 @mixin font-h6-light($fontcolor: var(--color-text)) {
    font-family: $font-primary; // Outfit
    font-size: $font-size-H6;
-   font-weight: 300; // Outfit Light
+   font-weight: 200; // Outfit Light
    color: $fontcolor;
 }
 

@@ -1,11 +1,15 @@
+// Components
 import programingLanguages from "@/services/programingLanguages.service"
+
+//  Types
+import type { programmingLanguages } from '@/types/project.type';
 
 // Custom Styles
 import "./MyTools.scss"
 
 export default function MyTools() {
 
-   const tools: {name: string, icon: string}[] = programingLanguages
+   const tools: programmingLanguages[] = programingLanguages
 
    return (
       <section id="section-my-tools">
