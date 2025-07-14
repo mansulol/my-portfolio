@@ -1,0 +1,111 @@
+// OUTFIT FONT
+
+// Outfit - Thin (100)
+@font-face {
+   font-family: "Outfit";
+   src: url("/src/assets/fonts/Outfit/Outfit-Thin.ttf") format("truetype");
+   font-weight: 100;
+   font-style: normal;
+   font-display: swap;
+}
+
+// Outfit - ExtraLight (200)
+@font-face {
+   font-family: "Outfit";
+   src: url("/src/assets/fonts/Outfit/Outfit-ExtraLight.ttf") format("truetype");
+   font-weight: 200;
+   font-style: normal;
+   font-display: swap;
+}
+
+// Outfit - Light (300)
+@font-face {
+   font-family: "Outfit";
+   src: url("/src/assets/fonts/Outfit/Outfit-Light.ttf") format("truetype");
+   font-weight: 300;
+   font-style: normal;
+   font-display: swap;
+}
+
+// Outfit - Regular (400)
+@font-face {
+   font-family: "Outfit";
+   src: url("/src/assets/fonts/Outfit/Outfit-Regular.ttf") format("truetype");
+   font-weight: 400; // o 'normal'
+   font-style: normal;
+   font-display: swap;
+}
+
+// Outfit - Medium (500)
+@font-face {
+   font-family: "Outfit";
+   src: url("/src/assets/fonts/Outfit/Outfit-Medium.ttf") format("truetype");
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+// Outfit - SemiBold (600)
+@font-face {
+   font-family: "Outfit";
+   src: url("/src/assets/fonts/Outfit/Outfit-SemiBold.ttf") format("truetype");
+   font-weight: 600;
+   font-style: normal;
+   font-display: swap;
+}
+
+// Outfit - Bold (700)
+@font-face {
+   font-family: "Outfit";
+   src: url("/src/assets/fonts/Outfit/Outfit-Bold.ttf") format("truetype");
+   font-weight: 700; // o 'bold'
+   font-style: normal;
+   font-display: swap;
+}
+
+// Outfit - ExtraBold (800)
+@font-face {
+   font-family: "Outfit";
+   src: url("/src/assets/fonts/Outfit/Outfit-ExtraBold.ttf") format("truetype");
+   font-weight: 800;
+   font-style: normal;
+   font-display: swap;
+}
+
+// Outfit - Black (900)
+@font-face {
+   font-family: "Outfit";
+   src: url("/src/assets/fonts/Outfit/Outfit-Black.ttf") format("truetype");
+   font-weight: 900;
+   font-style: normal;
+   font-display: swap;
+}
+
+//  KONTES FONT
+
+// Kontes - Regular
+@font-face {
+   font-family: "Kontes";
+   src: url("/src/assets/fonts/kontes/kontes-compressed.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+// Kontes - Bold
+@font-face {
+   font-family: "Kontes";
+   src: url("/src/assets/fonts/kontes/kontes-compressed-bold.ttf") format("truetype");
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+
+// Kontes - OTF 
+@font-face {
+   font-family: "Kontes";
+   src: url("/src/assets/fonts/kontes/kontes.otf") format('opentype'); // Asegúrate del format correcto
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}

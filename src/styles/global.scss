@@ -1,0 +1,31 @@
+@import "./fonts.scss";
+@import "./typography.scss";
+
+// Colors
+$primary-color: #A47864;
+$text-color: #096c6e;
+
+$color-default-black: #1B1A19;
+$color-default-white: #FFFFFF;
+
+[data-theme="dark"] {
+   --color-primary: #A47864;
+   --color-secondary: #2C3142;
+   --color-text: #E2E2E2;
+}
+
+[data-theme="light"] {
+   --color-primary: #A47864;
+   --color-text: #231F20;
+   --color-secondary: #E2E2E2;
+}
+
+// Constants
+$width-card: 560;
+
+html,
+body {
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+}

@@ -1,0 +1,64 @@
+// Font Sizes
+$font-size-H1: 96px;
+$font-size-H2: 60px;
+$font-size-H3: 48px;
+$font-size-H4: 34px;
+$font-size-H5: 24px;
+$font-size-H6: 20px;
+$font-size-Subtitle: 16px;
+$font-size-Body: 14px;
+$font-size-subtle: 12px;
+$font-size-caption: 10px;
+$font-size-footnote: 8px;
+
+// Fonts
+$font-primary: "Outfit",
+sans-serif;
+$font-secondary: "Kontes",
+sans-serif;
+
+// Font Styles
+@mixin font-h1-bold($fontcolor) {
+   font-family: $font-secondary;
+   font-size: $font-size-H1;
+   font-weight: 800;
+   color: $fontcolor;
+}
+
+;
+
+@mixin font-h4-bold($fontcolor) {
+   font-family: $font-primary;
+   font-size: $font-size-H4;
+   font-weight: 800;
+   color: $fontcolor;
+}
+
+;
+
+@mixin font-h4-regular($fontcolor) {
+   font-family: $font-primary;
+   font-size: $font-size-H4;
+   font-weight: 500;
+   color: $fontcolor;
+}
+
+;
+
+@mixin font-h5-bold($fontcolor) {
+   font-family: $font-primary;
+   font-size: $font-size-H5;
+   font-weight: 800;
+   color: $fontcolor;
+}
+
+;
+
+@mixin font-h5-regular($fontcolor) {
+   font-family: $font-primary;
+   font-size: $font-size-H5;
+   font-weight: 500;
+   color: $fontcolor;
+}
+
+;
