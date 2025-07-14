@@ -1,64 +1,238 @@
-// Font Sizes
+// src/styles/_typography.scss
+
+// ------------------------------------
+// Font Sizes (Variables SASS)
+// ------------------------------------
 $font-size-H1: 96px;
 $font-size-H2: 60px;
 $font-size-H3: 48px;
 $font-size-H4: 34px;
 $font-size-H5: 24px;
 $font-size-H6: 20px;
-$font-size-Subtitle: 16px;
+$font-size-Headline: 34px;
 $font-size-Body: 14px;
-$font-size-subtle: 12px;
-$font-size-caption: 10px;
-$font-size-footnote: 8px;
+$font-size-Subtitle: 16px;
+$font-size-Caption: 10px;
+$font-size-Footnote: 8px;
 
-// Fonts
+
+// ------------------------------------
+// Font Families (Variables SASS)
+// ------------------------------------
 $font-primary: "Outfit",
 sans-serif;
 $font-secondary: "Kontes",
 sans-serif;
 
-// Font Styles
-@mixin font-h1-bold($fontcolor) {
-   font-family: $font-secondary;
+
+// ------------------------------------
+// Font Styles Mixins
+// ------------------------------------
+
+// H1 (Kontes)
+@mixin font-h1-bold($fontcolor: var(--color-text)) {
+   font-family: $font-secondary; // Kontes
    font-size: $font-size-H1;
    font-weight: 800;
    color: $fontcolor;
 }
 
-;
+@mixin font-h1-regular($fontcolor: var(--color-text)) {
+   font-family: $font-secondary; // Kontes
+   font-size: $font-size-H1;
+   font-weight: 400;
+   color: $fontcolor;
+}
 
-@mixin font-h4-bold($fontcolor) {
-   font-family: $font-primary;
-   font-size: $font-size-H4;
+
+// H2 (Kontes)
+@mixin font-h2-bold($fontcolor: var(--color-text)) {
+   font-family: $font-secondary; // Kontes
+   font-size: $font-size-H2;
    font-weight: 800;
    color: $fontcolor;
 }
 
-;
-
-@mixin font-h4-regular($fontcolor) {
-   font-family: $font-primary;
-   font-size: $font-size-H4;
-   font-weight: 500;
+@mixin font-h2-regular($fontcolor: var(--color-text)) {
+   font-family: $font-secondary; // Kontes
+   font-size: $font-size-H2;
+   font-weight: 400;
    color: $fontcolor;
 }
 
-;
 
-@mixin font-h5-bold($fontcolor) {
-   font-family: $font-primary;
-   font-size: $font-size-H5;
+// H3 (Kontes)
+@mixin font-h3-bold($fontcolor: var(--color-text)) {
+   font-family: $font-secondary; // Kontes
+   font-size: $font-size-H3;
    font-weight: 800;
    color: $fontcolor;
 }
 
-;
-
-@mixin font-h5-regular($fontcolor) {
-   font-family: $font-primary;
-   font-size: $font-size-H5;
-   font-weight: 500;
+@mixin font-h3-regular($fontcolor: var(--color-text)) {
+   font-family: $font-secondary; // Kontes
+   font-size: $font-size-H3;
+   font-weight: 400;
    color: $fontcolor;
 }
 
-;
+
+// H4 (Outfit) - "Bold", "Regular", "Light"
+@mixin font-h4-bold($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-H4;
+   font-weight: 700; // Outfit Bold
+   color: $fontcolor;
+}
+
+@mixin font-h4-regular($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-H4;
+   font-weight: 400; // Outfit Regular
+   color: $fontcolor;
+}
+
+@mixin font-h4-light($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-H4;
+   font-weight: 300; // Outfit Light
+   color: $fontcolor;
+}
+
+@mixin font-h5-bold($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-H5;
+   font-weight: 700; // Outfit Bold
+   color: $fontcolor;
+}
+
+@mixin font-h5-regular($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-H5;
+   font-weight: 400; // Outfit Regular
+   color: $fontcolor;
+}
+
+@mixin font-h5-light($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-H5;
+   font-weight: 300; // Outfit Light
+   color: $fontcolor;
+}
+
+
+// H6 (Outfit) - "Bold", "Regular", "Light"
+@mixin font-h6-bold($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-H6;
+   font-weight: 700; // Outfit Bold
+   color: $fontcolor;
+}
+
+@mixin font-h6-regular($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-H6;
+   font-weight: 400; // Outfit Regular
+   color: $fontcolor;
+}
+
+@mixin font-h6-light($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-H6;
+   font-weight: 300; // Outfit Light
+   color: $fontcolor;
+}
+
+
+// Headline (Outfit) - "Bold", "Regular", "Light"
+@mixin font-headline-bold($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-Headline;
+   font-weight: 700; // Outfit Bold
+   color: $fontcolor;
+}
+
+@mixin font-headline-regular($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-Headline;
+   font-weight: 400; // Outfit Regular
+   color: $fontcolor;
+}
+
+@mixin font-headline-light($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-Headline;
+   font-weight: 300; // Outfit Light
+   color: $fontcolor;
+}
+
+
+// Body (Outfit) - "Bold", "Regular", "Light"
+@mixin font-body-bold($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-Body;
+   font-weight: 700; // Outfit Bold
+   color: $fontcolor;
+}
+
+@mixin font-body-regular($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-Body;
+   font-weight: 400; // Outfit Regular
+   color: $fontcolor;
+}
+
+@mixin font-body-light($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-Body;
+   font-weight: 300; // Outfit Light
+   color: $fontcolor;
+}
+
+
+// Subtitle (Outfit) - "Bold", "Regular"
+@mixin font-subtitle-bold($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-Subtitle;
+   font-weight: 700; // Outfit Bold
+   color: $fontcolor;
+}
+
+@mixin font-subtitle-regular($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-Subtitle;
+   font-weight: 400; // Outfit Regular
+   color: $fontcolor;
+}
+
+
+// Caption (Outfit) - "Bold", "Regular"
+@mixin font-caption-bold($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-Caption;
+   font-weight: 700; // Outfit Bold
+   color: $fontcolor;
+}
+
+@mixin font-caption-regular($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-Caption;
+   font-weight: 400; // Outfit Regular
+   color: $fontcolor;
+}
+
+
+// Footnote (Outfit) - "Bold", "Regular"
+@mixin font-footnote-bold($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-Footnote;
+   font-weight: 700; // Outfit Bold
+   color: $fontcolor;
+}
+
+@mixin font-footnote-regular($fontcolor: var(--color-text)) {
+   font-family: $font-primary; // Outfit
+   font-size: $font-size-Footnote;
+   font-weight: 400; // Outfit Regular
+   color: $fontcolor;
+}
