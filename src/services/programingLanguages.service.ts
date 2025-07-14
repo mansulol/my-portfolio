@@ -6,7 +6,10 @@ import mongodbIcon from '@/assets/icons/mongodb.svg';
 import pythonIcon from '@/assets/icons/python.svg';
 import vuejsIcon from '@/assets/icons/vuejs.svg';
 
-const programingLanguages: { name: string; icon: string }[] = [
+//  Types
+import type { programmingLanguages } from '@/types/project.type';
+
+const programingLanguages: programmingLanguages[] = [
    {
       name: 'React',
       icon: reactIcon,

@@ -1,0 +1,97 @@
+@import "/src/styles/global.scss";
+
+#section-my-latest-works {
+   padding: 60px 0;
+
+   .container-text-my-latest-works {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 80px;
+
+      @include font-h3-bold();
+   }
+
+   .container-cards-my-latest-works {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 200px;
+   }
+
+   .card-latest-works {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      #text-card-lastest-work {
+         @include font-h4-bold();
+         margin: 18px;
+      }
+
+      .card-latest-works-wrapper {
+         background-color: $color-default-white;
+         width: 75%;
+         height: 70vh;
+         border-radius: 30px;
+         overflow: hidden;
+         display: flex;
+
+         .container-image-card-latest-works {
+            flex: 1;
+            display: grid;
+            place-content: center;
+
+            img {
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+            }
+         }
+
+         .container-project-card-latest-works {
+            flex: 1;
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .container-title-project-latest-works {
+               * {
+                  margin: 0
+               }
+
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               gap: 20px;
+
+               #text-project-description-latest-works {
+                  @include font-h6-light();
+               }
+
+               #text-project-title-latest-works {
+                  @include font-h3-regular();
+               }
+
+               #text-project-details-latest-works {
+                  @include font-subtitle-bold();
+               }
+            }
+
+            .container-buttons-card-latest-works {
+               display: flex;
+               gap: 20px;
+
+               button {
+                  width: 196px;
+                  height: 60px;
+               }
+            }
+         }
+      }
+   }
+}
