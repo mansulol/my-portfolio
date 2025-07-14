@@ -7,6 +7,7 @@ import './Home.scss'
 import MyInfo from '@components/myInfo/MyInfo'
 import MyTools from '@components/myTools/MyTools'
 import MyLatestWorks from '@components/mylatestWorks/MyLatestWorks'
+import Footer from '@components/footer/Footer'
 
 export default function Home() {
     return (
@@ -15,9 +16,8 @@ export default function Home() {
             <Hero />
             <MyInfo />
             <MyTools />
-
             <MyLatestWorks />
-
+            <Footer />
         </div>
     )
 }
