@@ -13,6 +13,7 @@ export default function Home() {
     return (
         <div id='container-home-page' >
             <Header />
+            <Hero />
             <MyInfo />
             <MyTools />
             <MyLatestWorks />
