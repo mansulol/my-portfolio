@@ -11,9 +11,18 @@ import Footer from '@components/footer/Footer'
 
 export default function Home() {
     return (
-        <div id='container-home-page' >
+        <div id='page-home' >
             <Header />
-            <Hero />
+            <Hero>
+                 <h2 className="text-section-hero" >
+                    {/* Lorem <span>ipsum</span> odor <br />
+                    amet, consectetuer <br />
+                    adipiscing */}
+                    Making <br />
+                    <span>great</span> things <br />
+                    happen
+                </h2>
+            </Hero>
             <MyInfo />
             <MyTools />
             <MyLatestWorks />
