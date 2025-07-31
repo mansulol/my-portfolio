@@ -1,0 +1,72 @@
+@import '/src/styles/global.scss';
+
+#page-projects{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container-my-works {
+    width: 100%;
+    height: 800px;
+    // min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .container-title-works{
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+
+        .text-section-hero {
+            margin: 20px 0;
+        }
+    }
+
+    .container-bento-projects {
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+        // margin: 0 100px;
+        
+        .bento-grid-projects-wrapper{
+            width: 100%;
+            height: 100%;
+            background-color: red;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 2em;
+
+            .bento-grid{
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                background-color: var(--color-primary);
+            }
+
+            .grid-1{
+                
+                grid-area: 1 / 1 / 3 / 2;
+            }
+
+            .grid-2{
+                grid-area: 1 / 2 / -3 / 4;
+            }
+
+            .grid-3 {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+
+            .grid-4{
+                grid-area: -3 / -2 / -1 / -1;
+            }
+            
+            .grid-5{
+                grid-area: 3 / 1 / 3 / -2;
+            } 
+        }
+    }
+}
