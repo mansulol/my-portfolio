@@ -1,17 +1,12 @@
 import "./Hero.scss"
 
-export default function Hero() {
+export default function Hero({children}) {
     return (
         <section id="section-hero" >
             <div className="section-hero-wrapper">
-                <h2 id="text-section-hero" >
-                    {/* Lorem <span>ipsum</span> odor <br />
-                    amet, consectetuer <br />
-                    adipiscing */}
-                    Making <br />
-                    <span>great</span> things <br />
-                    happen
-                </h2>
+
+               { children }
+
             </div>
         </section>
     )

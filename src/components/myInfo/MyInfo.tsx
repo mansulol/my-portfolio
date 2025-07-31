@@ -1,5 +1,6 @@
 // Components
 import { Link } from "react-router-dom"
+import routes from "@services/appRoutes.service"
 
 // Custom styles
 import "./MyInfo.scss"
@@ -21,7 +22,7 @@ export default function MyInfo() {
             <article className="more-about-me-2">
                Hi, my name is Mansour, and I am a web developer with a passion for creating beautiful and functional websites. I have experience in various web technologies and enjoy working on projects that challenge my skills and creativity.
             </article>
-            <Link className="more-about-me-container" to={"/about"} >
+            <Link className="more-about-me-container" to={ routes.about.route } >
                <h3 className="text-more-about-me-title">
                   About Me
                </h3>

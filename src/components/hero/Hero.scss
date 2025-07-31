@@ -7,7 +7,7 @@ $pattern-size: 70px;
 $line-width: 3px;
 
 #section-hero {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: linear-gradient($pattern-color $line-width, transparent $line-width), linear-gradient(to right, $pattern-color $line-width, transparent $line-width);
     background-size: $pattern-size $pattern-size;
@@ -29,7 +29,7 @@ $line-width: 3px;
         // background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(237, 237, 237, 1) 29%, rgba(230, 230, 230, 1) 87%, rgba(226, 226, 226, 1) 100%);
     }
 
-    #text-section-hero {
+    .text-section-hero {
         text-align: center;
         @include font-h1-bold($color-default-black);
 
