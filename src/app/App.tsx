@@ -6,10 +6,10 @@ import '../styles/global.scss'
 export default function App() {
 
   return (
-    <div>
+    <body id="container-content-app" >
       <BrowserRouter>
         <RouteConfig />
       </BrowserRouter>
-    </div>
+    </body>
   )
 }
