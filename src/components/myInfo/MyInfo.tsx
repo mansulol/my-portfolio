@@ -1,4 +1,4 @@
-// Components
+// Packages
 import { Link } from "react-router-dom"
 import routes from "@services/appRoutes.service"
 
@@ -24,7 +24,7 @@ export default function MyInfo() {
             </article>
             <Link className="more-about-me-container" to={ routes.about.route } >
                <h3 className="text-more-about-me-title">
-                  About Me
+                  About Met=
                </h3>
                <img src="https://cdn-icons-png.flaticon.com/512/6941/6941884.png " alt="Img top left arrow" />
 

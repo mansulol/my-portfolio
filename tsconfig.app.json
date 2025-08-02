@@ -29,6 +29,7 @@
       "@components/*": ["components/*"],
       "@utils/*": ["utils/*"],
       "@services/*": ["services/*"],
+      "@assets/*": ["assets/*"],
       "@styles/*": ["styles/*"],
       "@/*": ["./*"],
     }

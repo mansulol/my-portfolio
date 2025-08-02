@@ -109,7 +109,7 @@ sans-serif;
 @mixin font-h5-regular($fontcolor: var(--color-text)) {
    font-family: $font-primary; // Outfit
    font-size: $font-size-H5;
-   font-weight: 400; // Outfit Regular
+   font-weight: 500; // Outfit Regular
    color: $fontcolor;
 }
 

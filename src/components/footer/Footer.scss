@@ -1,2 +1,36 @@
 @import "/src/styles/global.scss";
 
+#footer {
+    width: 100%;
+    color: var(--color-text-light);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 30px;
+
+        .wrapper-footer-title-copyright .footer-text-copyright {
+            @include font-h5-regular(var(--color-text-light));
+        }
+
+        .container-footer-links{
+            display: flex;
+            gap: 20px;
+
+            a {
+                color: var(--color-text-light);
+                text-decoration: none;
+    
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
