@@ -19,6 +19,8 @@ export default function Projects() {
                             <div className="bento-grid grid-3"></div>
                             <div className="bento-grid grid-4"></div>
                             <div className="bento-grid grid-5"></div>
+                            <div className="bento-grid grid-6"></div>
+                            <div className="bento-grid grid-7"></div>
                         </div>
                     </div>
                 </section>

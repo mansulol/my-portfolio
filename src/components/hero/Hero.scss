@@ -8,7 +8,7 @@ $line-width: 3px;
 
 #section-hero {
     width: 100%;
-    height: 100vh;
+    //height: 100vh;
     background-image: linear-gradient($pattern-color $line-width, transparent $line-width), linear-gradient(to right, $pattern-color $line-width, transparent $line-width);
     background-size: $pattern-size $pattern-size;
     background-color: $background-color;

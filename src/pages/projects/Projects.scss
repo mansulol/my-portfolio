@@ -1,13 +1,14 @@
 @import '/src/styles/global.scss';
 
 #page-projects{
-    min-height: 100vh;
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .container-my-works {
     width: 100%;
-    height: 800px;
     // min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -28,17 +29,17 @@
     .container-bento-projects {
         width: 100%;
         height: 100%;
-        background-color: blue;
+        display: flex;
         // margin: 0 100px;
         
         .bento-grid-projects-wrapper{
             width: 100%;
-            height: 100%;
-            background-color: red;
+            height: auto;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            gap: 2em;
+            grid-template-rows: 430px 286px 176px 286px;
+            gap: 1.5rem;
+            margin: 2rem 5rem;
 
             .bento-grid{
                 width: 100%;
@@ -48,25 +49,32 @@
             }
 
             .grid-1{
-                
-                grid-area: 1 / 1 / 3 / 2;
+                grid-area: 1 / 1 / 2 / 3;
             }
 
             .grid-2{
-                grid-area: 1 / 2 / -3 / 4;
+                grid-area: 1 / 3 / -4 / 4;
             }
 
             .grid-3 {
-                grid-area: 2 / 2 / 3 / 3;
+                grid-area: 2 / 1 / 4 / 2;
             }
 
             .grid-4{
-                grid-area: -3 / -2 / -1 / -1;
+                grid-area: 4 / 1 / 5 / -3;
             }
             
             .grid-5{
-                grid-area: 3 / 1 / 3 / -2;
-            } 
+                grid-area: 2 / 2 / -3 / 3;
+            }
+            
+            .grid-6{
+                grid-area: 3 / 2 / 5 / -2;
+            }
+
+            .grid-7{
+                grid-area: -4 / -2 / -1 / -1;
+            }
         }
     }
 }
