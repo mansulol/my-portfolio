@@ -1,13 +1,16 @@
-import "./Hero.scss"
+import React from "react";
+import "./Hero.scss";
 
-export default function Hero({children}) {
+interface HeroProps {
+    children: React.ReactNode;
+}
+
+export default function Hero({ children }: HeroProps) {
     return (
-        <section id="section-hero" >
+        <section id="section-hero">
             <div className="section-hero-wrapper">
-
-               { children }
-
+                {children}
             </div>
         </section>
-    )
+    );
 }
