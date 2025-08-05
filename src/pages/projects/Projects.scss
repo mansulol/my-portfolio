@@ -46,6 +46,9 @@
                 height: 100%;
                 border-radius: 20px;
                 background-color: var(--color-primary);
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             .grid-1{
