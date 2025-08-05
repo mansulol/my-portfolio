@@ -20,7 +20,7 @@ export default function MyLatestWorks() {
          </div>
          <div className="container-cards-my-latest-works">
             {
-               projectWorks.map((card: projectCard, index: number) => (
+               projectWorks.slice(0, 3).map((card: projectCard, index: number) => (
                <WorkCard key={index} cardInfo={card} />
             ))
             }
