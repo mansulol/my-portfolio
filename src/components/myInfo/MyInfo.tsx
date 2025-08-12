@@ -24,7 +24,7 @@ export default function MyInfo() {
             </article>
             <Link className="more-about-me-container" to={ routes.about.route } >
                <h3 className="text-more-about-me-title">
-                  About Met=
+                  About Me
                </h3>
                <img src="https://cdn-icons-png.flaticon.com/512/6941/6941884.png " alt="Img top left arrow" />
 
