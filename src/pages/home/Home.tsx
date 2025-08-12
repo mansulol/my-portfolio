@@ -14,14 +14,16 @@ export default function Home() {
         <div id='page-home' >
             <Header />
             <Hero>
-                 <h2 className="text-section-hero" >
-                    {/* Lorem <span>ipsum</span> odor <br />
+                <div className="wrapper-text-section-hero">
+                    <h2 className="text-section-hero" >
+                        {/* Lorem <span>ipsum</span> odor <br />
                     amet, consectetuer <br />
                     adipiscing */}
-                    Making <br />
-                    <span>great</span> things <br />
-                    happen
-                </h2>
+                        Making <br />
+                        <span>great</span> things <br />
+                        happen
+                    </h2>
+                </div>
             </Hero>
             <MyInfo />
             <MyTools />
