@@ -1,5 +1,50 @@
 @import '/src/styles/global.scss';
 
 .song-card {
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+
+    .song-card-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .container-song-card-media-controller {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+    }
+    .rhap_main-controls-button,
+    .rhap_play-pause-button,
+    .rhap_forward-button,
+    .rhap_rewind-button,
+    .rhap_repeat-button,
+    .rhap_volume-button,
+    .rhap_progress-indicator,
+    .rhap_progress-filled {
+        color: $primary-color;
+        fill: $primary-color;
+    }
+
+    .rhap_progress-bar-show-download {
+        background: rgba($primary-color, 0.2);
+    }
+
+    .rhap_time {
+        color: $primary-color;
+    }
+
+    .rhap_progress-bar {
+        background: rgba($primary-color, 0.1);
+    }
 }
