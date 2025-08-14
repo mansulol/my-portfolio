@@ -12,3 +12,8 @@ export type SongProps = {
    coverImage: string;
    audioFileURL: string;
 }
+
+export type GalleryPhoto = {
+   name: string;
+   images: string[];
+};
