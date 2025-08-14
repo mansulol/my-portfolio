@@ -1,11 +1,21 @@
+// Components
 import Hero from '@components/hero/Hero'
 import Header from '@components/header/Header'
+import Footer from '@components/footer/Footer'
+import SongCard from '@components/cards/songCard/SongCard'
+
+// Icons
+import menuIcon from '@/assets/icons/menu.svg'
+import mapIcon from '@/assets/icons/map.svg'
+import foodIcon from '@/assets/icons/food.svg'
+import heartIcon from '@/assets/icons/heart.svg'
+import userIcon from '@/assets/icons/user.svg'
+
+// Types
+import type { SongProps, GalleryPhoto } from '@/types/commons'
 
 // Styles
 import './About.scss'
-import Footer from '@components/footer/Footer'
-import SongCard from '@components/cards/songCard/SongCard'
-import type { SongProps } from '@/types/commons'
 
 export default function About() {
 
@@ -44,6 +54,27 @@ export default function About() {
         },
     ]
 
+    const galleryPhotos: GalleryPhoto[] = [
+        {
+            name: 'All',
+            images: [
+                'https://images.pexels.com/photos/33405063/pexels-photo-33405063.jpeg',
+                'https://images.pexels.com/photos/32883257/pexels-photo-32883257.jpeg',
+                'https://images.pexels.com/photos/33391693/pexels-photo-33391693.jpeg',
+                'https://images.pexels.com/photos/20063012/pexels-photo-20063012.jpeg'
+            ]
+        },
+        {
+            name: 'All',
+            images: [
+                'https://images.pexels.com/photos/33405063/pexels-photo-33405063.jpeg',
+                'https://images.pexels.com/photos/32883257/pexels-photo-32883257.jpeg',
+                'https://images.pexels.com/photos/33391693/pexels-photo-33391693.jpeg',
+                'https://images.pexels.com/photos/20063012/pexels-photo-20063012.jpeg'
+            ]
+        },
+    ]
+
     return (
         <div id='page-about'>
             <Header />
@@ -56,7 +87,17 @@ export default function About() {
                         <SongCard song={songExample[3]} />
                     </div>
                     <div className="gallery-photos-wrapper">
-                        
+                        <div className="container-gallery-photos-picture">
+                            {<img src={galleryPhotos[0].images[0]} alt="" />}
+                        </div>
+                        <div className="container-gallery_photos-controller">
+                            <img src={menuIcon} alt="icon menu" />
+                            <img src={mapIcon} alt="icon menu" />
+                            <img src={foodIcon} alt="icon food" />
+                            <img src={heartIcon} alt="icon heart" />
+                            <img src={userIcon} alt="icon user" />
+                        </div>
+
                     </div>
                     <div className="about-me-info-wrapper">
 
