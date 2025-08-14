@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <image id="image_1" width="100" height="100" p3:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADNUlEQVR4nO2dy04UQRSGP15CTAQCmHh5KWFcSAJBhYXKqOhKRRR9GATd64wmEna6gfQ7gBdwTMZUUm6IVc5MV3WfyfxfUrvpyl+3c+pyqgaEEEIIIYQQQgghhBBCCCGEGHLOA01gB/icKL0F1oHJAfRMAY98Hqn0uLKt+bKapgF8A7qZ0k9guQ89N/03ufQcA/MYboxuRelWD3pWKtQzhzHOAUcVVsApcDGiZ8b/pio9x9bM1/0KC9/16VlEz2YNeu5hiN0aKuBDRE+7Bj1vMMReQOQX33Pulkj7gbwPI3oOA9/sl9TiyvI1kLerAzOEKm01Qd7XA3kXkW+KwDcur7KsRhrbfIPcTpD3fMIGSTFFdWVSg6AG6QuNEGSyikgHkcmSD0FOHY0Q+RA0y0LT3gGQD0E+pJAP0QhxaKWOtk76Rj4E+ZAi0kG0Ug+YFXeubclkNUbFh+xFRC4AN0qkVsIDqnZJLQuRzmfqgOpdDUem7YiejzXoccfYZlivoQI2I3q2atDjAj3MMJk5IK17Jv0CLkX0XAE6Fer5DlzAGMsVVkCzBz0PK9SziFFc6OZJ5pHRBMZ60DLmzUjOkXLSZ2hrLcz4ILb3wIGf8ZRNLeDFf8xUiMvAS59HCi0HvmxPgekM9SeEEEIIIYYCd5HmecJp5qHfm9ryK/B+uQq88nmk0uPKtgHMYpyVzDeXOn4F3uvC0O2x/c6o5zRRQHm2Vbqljbz1CvUsYYypijcXO34FHjNTOUfG2fQDmMAQjyssfNcntx0S4nUNepwpNYO1A6pPo35AlfMIt53wCLc1Kke4OYMcGsaCHFaGIchBcVmoQYpIB1FcVmAY6xZuTahBkMkqIh1EJksmC82y0AiRD2FIgq1lslCDFJEOIqcup45MFhoh8iHIqaNbuMae+GsYe+JvKLbfQwdU7sFIPYJZAzvGnoltjfozsWs1VMCTiJ6NGvTcYcSfGp+N6JnOfJPrX0+Nj2OM0GwoR1ouseeUI13DKHO+t+S87brYh54lH8SWS8+R5cb4y7ifWW0n/AOVXeDBgNGBEz6IbTehnm3/9Lgz1UIIIYQQQgghhBBCCCGEEEIwtPwBnUSa6vMxkFsAAAAASUVORK5CYII=" xmlns:p3="http://www.w3.org/1999/xlink" />
+    <pattern id="pattern_2" patternTransform="scale(0.7 0.7)" width="2.429" height="2.429">
+      <use p4:href="#image_1" xmlns:p4="http://www.w3.org/1999/xlink" />
+    </pattern>
+  </defs>
+  <rect width="70" height="70" fill="url(#pattern_2)" fill-rule="evenodd" />
+</svg>
