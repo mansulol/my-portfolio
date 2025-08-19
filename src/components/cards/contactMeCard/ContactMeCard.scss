@@ -1,0 +1,55 @@
+@import '/src/styles/global.scss';
+
+.contact-me-card {
+    background-color: var(--color-text);
+    padding: 2rem;
+    max-width: 150px;
+    width: 30%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    color: $color-default-white;
+
+    .wrapper-title-contactme-card {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        .text-title-contactme-card {
+            @include font-h5-regular;
+            color: $color-default-white;
+        }
+    }
+
+    .contact-me-card-hiperlink {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        .text-hiperlink-contactme-card {
+            @include font-body-regular;
+            color: $color-default-white;
+            text-decoration: none;
+            transition: color 0.2s ease;
+    
+            &:active {
+                color: $primary-color;
+            }
+        }
+
+        img {
+            height: 60px;
+            object-fit: contain;
+            transition: transform 0.2s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    } 
+    
