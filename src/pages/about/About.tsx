@@ -9,7 +9,7 @@ import menuIcon from '@/assets/icons/menu.svg'
 import mapIcon from '@/assets/icons/map.svg'
 import foodIcon from '@/assets/icons/food.svg'
 import heartIcon from '@/assets/icons/heart.svg'
-import userIcon from '@/assets/icons/user.svg'
+// import userIcon from '@/assets/icons/user.svg'
 
 // Types
 import type { SongProps, GalleryPhoto } from '@/types/commons'
@@ -96,50 +96,42 @@ export default function About() {
                             <img src={mapIcon} alt="icon menu" />
                             <img src={foodIcon} alt="icon food" />
                             <img src={heartIcon} alt="icon heart" />
-                            <img src={userIcon} alt="icon user" />
+                            {/* <img src={userIcon} alt="icon user" /> */}
                         </div>
 
                     </div>
                     <div className="about-me-info-wrapper">
+                        <div className="wrapper-title-about-me">
+                            <h2 className='text-title-about-me' >About Me</h2>
+                            <hr />
+                        </div>
                         <div className="container-about-me-article">
-                            <h1 className='text-about-me-article' >About Me</h1>
+                            <h1 className='text-about-me-article' > Who am I</h1>
                             <article>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <p>
-                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
                             </article>
                         </div>
                         <div className="container-about-me-article">
-                            <h1 className='text-about-me-article'>About Me</h1>
+                            <h1 className='text-about-me-article'>Who am I</h1>
                             <article>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <p>
-                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
                             </article>
                         </div>
                         <div className="container-about-me-article">
-                            <h1 className='text-about-me-article'>About Me</h1>
+                            <h1 className='text-about-me-article'>Who am I</h1>
                             <article>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <p>
-                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
                             </article>
                         </div>
@@ -149,7 +141,7 @@ export default function About() {
             </Hero>
 
             <ContactMe />
-            
+
             <Footer />
 
         </div>
