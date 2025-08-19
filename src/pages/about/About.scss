@@ -82,12 +82,27 @@
         }
 
         .about-me-info-wrapper {
-            background-color: red;
+            background-color: var(--color-secondary);
             grid-area: 1 / 2 / 4 / 3;
             overflow: auto;
             border-radius: 20px;
             padding: 32px 24px;
             min-width: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .container-about-me-article {
+                .text-about-me-article {
+                    @include font-h4-regular;
+                    font-family: $font-secondary;
+                    margin-bottom: 16px;
+                }
+
+                article {
+                    @include font-h6-regular;
+                }
+            }
         }
     }
 }

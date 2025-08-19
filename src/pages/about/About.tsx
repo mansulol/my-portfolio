@@ -16,6 +16,7 @@ import type { SongProps, GalleryPhoto } from '@/types/commons'
 
 // Styles
 import './About.scss'
+import ContactMe from '@components/contactMe/ContactMe'
 
 export default function About() {
 
@@ -100,11 +101,55 @@ export default function About() {
 
                     </div>
                     <div className="about-me-info-wrapper">
+                        <div className="container-about-me-article">
+                            <h1 className='text-about-me-article' >About Me</h1>
+                            <article>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <p>
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </article>
+                        </div>
+                        <div className="container-about-me-article">
+                            <h1 className='text-about-me-article'>About Me</h1>
+                            <article>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <p>
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </article>
+                        </div>
+                        <div className="container-about-me-article">
+                            <h1 className='text-about-me-article'>About Me</h1>
+                            <article>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <p>
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </article>
+                        </div>
 
                     </div>
                 </div>
             </Hero>
 
+            <ContactMe />
+            
             <Footer />
 
         </div>
