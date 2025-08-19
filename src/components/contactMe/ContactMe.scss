@@ -1,0 +1,64 @@
+@import '/src/styles/global.scss';
+
+#section-contact-me {
+    width: 100%;
+    /* min-height: 100vh; */
+    padding: 20px 0;
+
+    .container-svg-contact-me {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 70%;
+            object-fit: cover;
+        }
+    }
+
+    .wrapper-title-contact-me {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+        .text-title-contact-me {
+            @include font-h3-bold;
+            margin: 0;
+        }
+    }
+
+    .container-cards-contact-me {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5rem;
+        padding: 2rem 0;
+
+        > div {
+            -webkit-mask-image: url('/src/assets/images/border-filled-custom.svg');
+            mask-image: url('/src/assets/images/border-filled-custom.svg');
+            -webkit-mask-size: contain;
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+        }
+
+        .contact-me-card:nth-child(1) {
+            transform: rotate(-8deg);
+        }
+
+        .contact-me-card:nth-child(2) {
+            transform: rotate(8deg);
+        }
+
+        .contact-me-card:nth-child(3) {
+            transform: rotate(-8deg);
+        }
+    }
+}
