@@ -3,8 +3,10 @@ export interface projectCard {
   description: string;
   details: string;
   repo: string;
+  website?: string;
   imageUrl: string;
   mobile: boolean;
+  // technologies: string[]; --- IGNORE ---
 }
 
 export interface programmingLanguages {
