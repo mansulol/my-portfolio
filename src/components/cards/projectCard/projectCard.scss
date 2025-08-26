@@ -1,0 +1,148 @@
+@import '/src/styles/global.scss';
+
+.project-card-horizontal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    display: flex;
+
+    .wrapper-project-card-overlay {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        position: absolute;
+        z-index: 50;
+        background: linear-gradient(180deg,
+                rgba(0, 0, 0, 0) 0%,
+                rgba(0, 0, 0, 0.244) 30%,
+                rgba(0, 0, 0, 0.63) 80%,
+                rgba(0, 0, 0, 0.71) 100%);
+
+        .container-project-overlay {
+            padding: 1rem;
+
+            .project-overlay-title {
+                margin: 0;
+                @include font-h5-bold();
+                color: white;
+            }
+
+            .project-overlay-description {
+                @include font-h6-light();
+                color: white;
+            }
+        }
+    }
+
+    .project-card-content {
+        padding: 1.5rem;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .project-card-description {
+            display: none;
+        }
+
+        .project-card-title {
+            margin: 0;
+            @include font-h4-bold();
+            color: var(--color-text);
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .project-card-image {
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .project-card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+
+            .project-links {
+                display: flex;
+                gap: 1rem;
+
+                .project-link {
+                    padding: 0.8rem 1.5rem;
+                    border-radius: 6px;
+                    background: var(--color-primary);
+                    color: white;
+                    text-decoration: none;
+                    font-weight: bold;
+                    transition: background 0.3s ease;
+
+                    &:hover {
+                        background: darken($primary-color, 10%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.project-card-vertical {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .wrapper-project-card-overlay {
+        display: none;
+    }
+
+    .project-card-content {
+        width: 100%;
+        text-align: center;
+
+        .project-card-title {
+            margin: 0;
+            margin-top: 10%;
+            @include font-h4-bold();
+            color: var(--color-text);
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .project-card-image {
+        width: 100%;
+        height: 80%;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
