@@ -1,11 +1,12 @@
 @import '/src/styles/global.scss';
 
-.project-card-horizontal {
+.project-card-mobile-horizontal {
     width: 100%;
     height: 100%;
     display: flex;
     position: relative;
     display: flex;
+    justify-content: space-between;
 
     .wrapper-project-card-overlay {
         width: 100%;
@@ -56,57 +57,18 @@
         }
     }
 
-    .project-card-image {
+    .container-card-mobile-horizontal-image {
+        width: 38%;
         height: 100%;
-        position: relative;
-        overflow: hidden;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .project-card-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-
-            .project-links {
-                display: flex;
-                gap: 1rem;
-
-                .project-link {
-                    padding: 0.8rem 1.5rem;
-                    border-radius: 6px;
-                    background: var(--color-primary);
-                    color: white;
-                    text-decoration: none;
-                    font-weight: bold;
-                    transition: background 0.3s ease;
-
-                    &:hover {
-                        background: darken($primary-color, 10%);
-                    }
-                }
-            }
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(26deg);
+        margin-left: 5rem;
     }
 }
 
-.project-card-vertical {
+.project-card-mobile-vertical {
     width: 100%;
     height: 100%;
     display: flex;
@@ -131,18 +93,15 @@
         }
     }
 
-    .project-card-image {
+    .container-card-mobile-vertical-image {
         width: 100%;
-        height: 80%;
+        // height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+        > div{
+            width: 80%;
         }
     }
 }
