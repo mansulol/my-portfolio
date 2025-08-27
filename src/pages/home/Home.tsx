@@ -1,15 +1,22 @@
-// Custom Components
+// Components
 import Header from '@components/header/Header'
 import Hero from '@components/hero/Hero'
-
-// Styles
-import './Home.scss'
 import MyInfo from '@components/myInfo/MyInfo'
 import MyTools from '@components/myTools/MyTools'
 import MyLatestWorks from '@components/mylatestWorks/MyLatestWorks'
 import Footer from '@components/footer/Footer'
+import ContactMe from '@components/contactMe/ContactMe'
+import { useEffect } from 'react'
+
+// Styles
+import './Home.scss'
 
 export default function Home() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     return (
         <div id='page-home' >
             <Header />
@@ -28,6 +35,7 @@ export default function Home() {
             <MyInfo />
             <MyTools />
             <MyLatestWorks />
+            <ContactMe />
             <Footer />
         </div>
     )

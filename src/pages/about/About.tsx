@@ -3,6 +3,7 @@ import Hero from '@components/hero/Hero'
 import Header from '@components/header/Header'
 import Footer from '@components/footer/Footer'
 import SongCard from '@components/cards/songCard/SongCard'
+import { useEffect } from 'react'
 
 // Icons
 import menuIcon from '@/assets/icons/menu.svg'
@@ -19,6 +20,10 @@ import './About.scss'
 import ContactMe from '@components/contactMe/ContactMe'
 
 export default function About() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const songExample: SongProps[] = [
         {

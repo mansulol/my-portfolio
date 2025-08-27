@@ -5,7 +5,7 @@ export interface projectCard {
   repo: string;
   website?: string;
   imageUrl: string;
-  mobile: boolean;
+  // isMobile: boolean;
   // technologies: string[]; --- IGNORE ---
 }
 

@@ -18,8 +18,8 @@ export default function ContactMe() {
             </div>
             <div className="container-cards-contact-me">
                 <ContactMeCard title="Resume" urlLink="https://mansulol.github.io/my-portfolio/docs/CV_Programing_en.pdf"/>
-                <ContactMeCard title="Photos" />
-                <ContactMeCard title="Archives" />
+                <ContactMeCard title="Recomendation Letter" urlLink="https://mansulol.github.io/my-portfolio/docs/CASAMEDIA_Letter_Recommendation-Mansour-2025.pdf" />
+                <ContactMeCard title="Form" />
             </div>
         </div>
     );

@@ -11,13 +11,13 @@ export default function Header() {
     return (
         <header id='header' >
             <div id="header-wrapper">
-                <Link to={routes.home.route} className='text-name-portfolio' >{name} </Link>
+                <Link to={routes.home.route} className='text-name-portfolio' preventScrollReset={false} >{name} </Link>
                 <ul id='navbar' >
                     <li>
-                        <Link to={routes.projects.route} > {routes.projects.name} </Link>
+                        <Link to={routes.projects.route} preventScrollReset={false} > {routes.projects.name} </Link>
                     </li>
                     <li>
-                        <Link to={routes.about.route} > {routes.about.name} </Link>
+                        <Link to={routes.about.route} preventScrollReset={false} > {routes.about.name} </Link>
                     </li>
                 </ul>
 

@@ -5,14 +5,21 @@ import Footer from "@components/footer/Footer";
 import projectWorks from "@services/projects.service";
 import ProjectCardMobile from '@components/cards/projectCardMobile/ProjectCardMobile';
 import ProjectCardWebpage from '@components/cards/projectCardWebpage/ProjectCardWebpage';
+import { useEffect } from "react";
 
 // Types
 // import type { projectCard } from "@/types/project.type"
 
 // Styles
 import "./Projects.scss";
+import ContactMe from "@components/contactMe/ContactMe";
 
 export default function Projects() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     return (
         <div id="page-projects">
             <Header />
@@ -78,6 +85,7 @@ export default function Projects() {
                     </div>
                 </section>
             </Hero>
+            <ContactMe />
             <Footer />
         </div>
     );
