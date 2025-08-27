@@ -3,7 +3,8 @@ import Hero from "@components/hero/Hero";
 import Header from "@components/header/Header";
 import Footer from "@components/footer/Footer";
 import projectWorks from "@services/projects.service";
-import ProjectCard from '@/components/cards/projectCard/ProjectCard';
+import ProjectCardMobile from '@components/cards/projectCardMobile/ProjectCardMobile';
+import ProjectCardWebpage from '@components/cards/projectCardWebpage/ProjectCardWebpage';
 
 // Types
 // import type { projectCard } from "@/types/project.type"
@@ -30,44 +31,45 @@ export default function Projects() {
                                     />
                                 </div>
                             ))} */}
+                            
                             <div className={`bento-grid grid-1`}>
-                                <ProjectCard
+                                <ProjectCardMobile
                                     pos={0}
                                     projectCard={projectWorks[0]}
                                 />
                             </div>
                             <div className={`bento-grid grid-2`}>
-                                <ProjectCard
+                                <ProjectCardMobile
                                     pos={1}
                                     projectCard={projectWorks[1]}
                                 />
                             </div>
                             <div className={`bento-grid grid-3`}>
-                                <ProjectCard
+                                <ProjectCardWebpage
                                     pos={1}
                                     projectCard={projectWorks[2]}
                                 />
                             </div>
                             <div className={`bento-grid grid-4`}>
-                                <ProjectCard
+                                <ProjectCardMobile
                                     pos={0}
                                     projectCard={projectWorks[3]}
                                 />
                             </div>
                             <div className={`bento-grid grid-5`}>
-                                <ProjectCard
+                                <ProjectCardMobile
                                     pos={0}
                                     projectCard={projectWorks[4]}
                                 />
                             </div>
                             <div className={`bento-grid grid-6`}>
-                                <ProjectCard
+                                <ProjectCardMobile
                                     pos={1}
                                     projectCard={projectWorks[5]}
                                 />
                             </div>
                             <div className={`bento-grid grid-7`}>
-                                <ProjectCard
+                                <ProjectCardMobile
                                     pos={1}
                                     projectCard={projectWorks[6]}
                                 />
